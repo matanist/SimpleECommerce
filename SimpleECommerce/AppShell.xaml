@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SimpleECommerce.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SimpleECommerce"
+    xmlns:views="clr-namespace:SimpleECommerce.Views"
+    Title="SimpleECommerce">
+
+    <TabBar>
+        <Tab Title="AnaSayfa" Icon="home.svg">
+            <ShellContent ContentTemplate="{DataTemplate views:MainPage}" />
+        </Tab>
+        <Tab Title="Kategoriler" Icon="categories.svg">
+            <ShellContent ContentTemplate="{DataTemplate views:CategoriesPage}" />
+        </Tab>
+        <Tab Title="Sepet" Icon="cart2.svg">
+            <ShellContent ContentTemplate="{DataTemplate views:CartPage}" />
+        </Tab>
+        <Tab Title="Profil" Icon="user.svg">
+            <ShellContent ContentTemplate="{DataTemplate views:ProfilePage}" />
+        </Tab>
+    </TabBar>
+
+</Shell>
