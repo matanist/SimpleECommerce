@@ -4,7 +4,12 @@
              x:Class="SimpleECommerce.Views.MainPage">
 
     <ScrollView>
-        
+        <VerticalStackLayout Margin="20">
+            <Button Text="Ürünü Getir" Clicked="Button_Clicked"/>
+            <Label x:Name="lblName" Text="Ürün Adı:" />
+            <Label x:Name="lblPrice" Text="Fiyat:" />
+            <Image x:Name="imgProduct" /> 
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>
